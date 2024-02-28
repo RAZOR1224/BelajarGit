@@ -11,6 +11,197 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+                    /* styles.css */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding-top: 200px; /* Adjust the value as needed to create enough space for your fixed header */
+            background-image: url('https://toram.jp/pc/images/toram/title_bg.jpg');
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: cover;
+        }
+
+        .fixed-image {
+            position: fixed;
+            margin: 0;
+            padding: 0;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Place it behind other content */
+        }
+
+        /* Style for the background */
+        .background {
+            position: fixed;
+            margin: 0;
+            padding: 0;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2; /* Place it behind everything */
+        }
+
+        /* Add a new CSS class for the fixed header */
+        .fixed-header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000; /* Adjust the z-index as needed to ensure it appears above other elements */
+        }
+
+        /* Style for the page content */
+        .content {
+            position: relative;
+            z-index: 1; /* Place it above the image and background */
+            padding: 20px;
+        }
+
+        /* Set all text color to white */
+        body, h1, h2, h3, h4, h5, h6, p, a {
+            color: #ffffff;
+        }
+
+
+
+        body {
+            position: relative;
+            background: url('https://toram.jp/pc/images/toram/title_bg.jpg') 50% 0 no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        body:after {
+            content: "";
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100vh;
+            background: url('https://toram.jp/pc/images/toram/title_bg.jpg') 50% 0 no-repeat;
+            background-size: cover;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .profile-card {
+            background-color: rgba(51, 51, 51, 0.5);
+            border-radius: 10px;
+            box-shadow: 0 0px 10px 0 rgba(255, 255, 255, 0.5);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .profile-picture {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .skills-bar {
+            margin-top: 10px;
+        }
+
+        .skills-label {
+            font-weight: bold;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            overflow: hidden;
+            background-color: #ffffff;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #11ff4100;
+            color: rgba(235, 235, 235, 0.816);
+        }
+
+        /* Styles for the combined header and navbar */
+        .header-navbar {
+            background-color: rgba(51, 51, 51, 1);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .w3-content {
+            flex: 1;
+        }
+
+        footer {
+            margin-top: auto;
+        }
+
+        .descr {
+            width: 299px;
+            height: 61.5px;
+            padding: 10px auto;
+            margin: 0 auto; }
+
+        .gif {
+            width: 100%;
+            height: 550px;
+        }
+
+        .snow {
+            width: 100%;
+            height: 100%;
+            background-image: url('https://i.ibb.co/d473RNv/CORE-LOGO.gif');
+            background-repeat: no-repeat;
+            background-size: 70%;
+            background-position: center; /* Center-align the background image */
+            mix-blend-mode: screen;
+        }
+
+        /* Default styles for the navbar links */
+        .navbar a {
+            text-decoration: none;
+            padding: 10px 15px;
+            color: #000; /* Default text color */
+        }
+
+        /* Style for the active link */
+        .navbar a.active {
+            background-color: white; /* Set the background color for the active link */
+            color: #2196F3; /* Set the text color for the active link */
+        }
+    </style>
 </head>
 
 <body class="w3-light-grey">
